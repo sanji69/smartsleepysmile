@@ -1,0 +1,84 @@
+
+
+body {
+    background-size:cover;
+    background-position:center center;
+    background-attachment:fixed;
+  }
+
+.countdown-wrapper {
+    background:url("../img/pillow.jpg") no-repeat center;
+    height: 620px;
+    margin:0;
+    padding: 0;
+    background-size: cover;
+
+}
+
+  #countdown, #countdown-text {
+      width: 800px;
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+
+  .countdown {
+    font-weight: 900;
+    font-size: 140px;
+    color: #fff;
+    opacity: .7;
+    letter-spacing: -4px;
+  }
+
+  .counter-text {
+    font-weight: 900;
+    font-size: 40px;
+    color: #b3bceb;
+    opacity: 0.9;
+    text-align: center;
+  }
+
+
+  .timer {
+    display: inline-block;
+    margin: 10px;
+  }
+
+.col-4
+{
+    margin-top: 5%;
+}
+.col-8
+{
+    margin-top: 5%;
+}.col-6
+{
+    margin-top: 5%;
+}
+
+.dropdown:hover > #cart-dropdown
+{
+  display: block;
+}
+
+.fonction
+{
+    height: 1300px;
+    /* background-color: #aad0daee; */
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#353838+0,abd3ee+5,abd3ee+27,abd3ee+73,ffffff+101 */
+    background: #353838; /* Old browsers */
+    background: -moz-linear-gradient(top, #353838 0%, #abd3ee 5%, #abd3ee 27%, #abd3ee 73%, #ffffff 101%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #353838 0%,#abd3ee 5%,#abd3ee 27%,#abd3ee 73%,#ffffff 101%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #353838 0%,#abd3ee 5%,#abd3ee 27%,#abd3ee 73%,#ffffff 101%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#353838', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+.fonction-bis
+{
+    height: 600px;
+    /* background-color: #aad0daee; */
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#353838+0,abd3ee+5,abd3ee+27,abd3ee+73,ffffff+101 */
+    background: white;
+}
