@@ -29,16 +29,19 @@
                 <li class="nav-item">
                   <a class="nav-link" href="#">Pricing</a>
                 </li>
-                <div class="dropdown">
-                  <div id="cart">
-                    <p><span id="in-cart-items-num">0</span> Articles</p>
-                  </div>
-
-                  <ul id="cart-dropdown" hidden>
-                    <li id="empty-cart-msg"><a>Votre panier est vide</a></li>
-                    <li class="go-to-cart hidden"><a href="/panier/">Voir le panier</a></li>
-                  </ul>
-                </div>
+                <li class="nav-item">
+                    <div class="dropdown">
+                      <div id="cart">
+                        <p><span id="in-cart-items-num">0</span> Articles</p>
+                      </div>
+                      <div id="cart-dropdown">
+                      <ul>
+                        <li id="empty-cart-msg"><a>Votre panier est vide</a></li>
+                        <li class="go-to-cart hidden"><a href="panier.html">Voir le panier</a></li>
+                      </ul>
+                      </div>
+                    </div>
+                </li>
               </ul>
             </div>
           </nav>
@@ -93,7 +96,19 @@
                 <div class="col-8">
                     <h3>1er article</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis, lorem sed molestie fermentum, nibh turpis facilisis purus, sed condimentum elit urna eget dolor. Pellentesque placerat dolor et metus blandit maximus. Vivamus feugiat purus at feugiat blandit. Duis lacinia, nisi et facilisis posuere, metus sapien laoreet justo, consequat dignissim lorem sapien eu est. Quisque accumsan hendrerit risus viverra gravida. Curabitur sollicitudin iaculis risus eget rutrum. Nunc aliquam sagittis massa feugiat tincidunt. Nunc vel dolor quis arcu feugiat venenatis. Sed non mattis massa.</p>
-                    <button type="button" class="btn btn-primary" onclick="" data-id="1" data-name="1er article" data-price="1200">Ajouter au panier</button>
+                    <label for="q">Quantité: </label>
+                    <select id="qt" name="q">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                    </select><br>
+                    <button type="button" class="add-to-cart" data-id="1" data-name="Articles1" data-price="1200,00">Ajouter au panier</button>
                 </div>
             </div>
 
@@ -104,7 +119,19 @@
                 <div class="col-8">
                     <h3>2e article</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis, lorem sed molestie fermentum, nibh turpis facilisis purus, sed condimentum elit urna eget dolor. Pellentesque placerat dolor et metus blandit maximus. Vivamus feugiat purus at feugiat blandit. Duis lacinia, nisi et facilisis posuere, metus sapien laoreet justo, consequat dignissim lorem sapien eu est. Quisque accumsan hendrerit risus viverra gravida. Curabitur sollicitudin iaculis risus eget rutrum. Nunc aliquam sagittis massa feugiat tincidunt. Nunc vel dolor quis arcu feugiat venenatis. Sed non mattis massa.</p>
-                    <button type="button" class="btn btn-primary" onclick="" data-id="2" data-name="2e article" data-price="1200">Ajouter au panier</button>
+                    <label for="q">Quantité: </label>
+                    <select id="qt" name="q">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                    </select><br>
+                    <button type="button" class="add-to-cart" data-id="2" data-name="Articles2" data-price="1200,00">Ajouter au panier</button>
                 </div>
             </div>
 
@@ -116,7 +143,19 @@
                 <div class="col-8">
                     <h3>3e article</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis, lorem sed molestie fermentum, nibh turpis facilisis purus, sed condimentum elit urna eget dolor. Pellentesque placerat dolor et metus blandit maximus. Vivamus feugiat purus at feugiat blandit. Duis lacinia, nisi et facilisis posuere, metus sapien laoreet justo, consequat dignissim lorem sapien eu est. Quisque accumsan hendrerit risus viverra gravida. Curabitur sollicitudin iaculis risus eget rutrum. Nunc aliquam sagittis massa feugiat tincidunt. Nunc vel dolor quis arcu feugiat venenatis. Sed non mattis massa.</p>
-                    <button type="button" class="btn btn-primary" onclick="" data-id="3" data-name="3e article" data-price="1200">Ajouter au panier</button>
+                    <label for="q">Quantité: </label>
+                    <select id="qt" name="q">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                    </select><br>
+                    <button type="button" class="add-to-cart" data-id="3" data-name="Articles3" data-price="1200,00">Ajouter au panier</button>
                 </div>
             </div>
          </div>

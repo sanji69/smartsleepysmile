@@ -59,11 +59,6 @@ body {
     margin-top: 5%;
 }
 
-.dropdown:hover > #cart-dropdown
-{
-  display: block;
-}
-
 .fonction
 {
     height: 1300px;
