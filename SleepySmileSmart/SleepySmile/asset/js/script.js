@@ -44,32 +44,33 @@ var seconds = (seconds.toLocaleString(undefined,{minimumIntegerDigits: 2}));
 //afficher masquer Panier
 var timeout;
 $('#cart-dropdown').hide();
+$('#cart-popup').hide();
+
 
 $('#cart').on({
   mouseenter: function() {
     $('#cart-dropdown').show();
-    // console.log("hello");
+    $('#cart-popup').show();
   },
   mouseleave: function() {
     timeout = setTimeout(function() {
       $('#cart-dropdown').hide();
-      // console.log("bye");
-    }, 200);
+      $('#cart-popup').hide();
+  }, 10000);
   }
 });
 
 // laisse le contenu ouvert à son survol
 // le cache quand la souris sort
-$('#cart-dropdown').on({
-  mouseenter: function() {
-    clearTimeout(timeout);
-    // console.log("timeout");
-  },
-  mouseleave: function() {
-    $('#cart-dropdown').hide();
-    // console.log("hide");
-  }
-});
+// $('#cart-dropdown').on({
+//   mouseenter: function() {
+//     clearTimeout(timeout);
+//   },
+//   mouseleave: function() {
+//     $('#cart-dropdown').hide();
+//     $('#cart-popup').hide();
+//   }
+// });
 
 function setCookie(cname, cvalue, exdays) {
   var d = new Date();
@@ -96,7 +97,6 @@ function getCookie(cname) {
     var c = ca[i];
     while (c[0] == ' ') {
       c = c.substring(1);
-      console.log(c);
     }
 
     if (c.indexOf(name) != -1) {
@@ -119,12 +119,14 @@ var cartArticles;
 function cartEmptyToggle() {
   if (inCartItemsNum > 0) {
     $('#cart-dropdown .hidden').removeClass('hidden');
+    $('#cart-popup  .hidden').removeClass('hidden');
     $('#empty-cart-msg').hide();
     // console.log("je suis ici");
   }
 
   else {
     $('#cart-dropdown .go-to-cart').addClass('hidden');
+    $('#cart-popup .go-to-cart').addClass('hidden');
     $('#empty-cart-msg').show();
     // console.log("je suis la");
   }
@@ -194,7 +196,7 @@ $('.add-to-cart').click(function() {
 });
 
 // si on est sur la page ayant pour url monsite.frPanier/
-if (window.location.pathname == 'panier.html') {
+if (window.location.pathname == '/SleepySmileSmart/SleepySmile/panier.html') {
   var items = '';
   var subTotal = 0;
   var total;
@@ -212,13 +214,13 @@ if (window.location.pathname == 'panier.html') {
     items += '<tr data-id="'+ v.id +'">\
              <td>' + v.name + '</td>\
              <td>'+ v.price +'€</td>\
-             <td><span class="qt">'+ v.qt +'</span> <span class="qt-minus">–</span> <span class="qt-plus">+</span> \
+             <td><span class="qt">'+ v.qt +'</span> <span class="qt-minus">[-]</span> <span class="qt-plus">[+]</span> \
              <a class="delete-item">Supprimer</a></td></tr>';
     subTotal += v.price.replace(',', '.') * v.qt;
   });
 
   // on reconverti notre résultat en décimal
-  subTotal = subTotal / 1000;
+  // subTotal = subTotal / 1000;
 
   // On insère le contenu du tableau et le sous total
   $('#cart-tablebody').empty().html(items);

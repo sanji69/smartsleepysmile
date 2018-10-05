@@ -9,42 +9,43 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <title>SleepySmile</title>
+    <title>SmartSleepySmile</title>
 </head>
 <body>
-    <div class="header">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item">
-                    <div class="dropdown">
-                      <div id="cart">
-                        <p><span id="in-cart-items-num">0</span> Articles</p>
-                      </div>
-                      <div id="cart-dropdown">
-                      <ul>
-                        <li id="empty-cart-msg"><a>Votre panier est vide</a></li>
-                        <li class="go-to-cart hidden"><a href="panier.html">Voir le panier</a></li>
-                      </ul>
-                      </div>
-                    </div>
-                </li>
-              </ul>
+
+    <div class="header  navbar-custom">
+        <div class="row background-transparent-lightblue ">
+            <nav class="navbar navbar-expand-lg navbar-light div-navbar col-10">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="SleepySmile.html">Accueil <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#desc">Description</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#prod">Nos Produits</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#cont">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+            </nav>
+            <div id="cart" class="dropdown cart-header col-2">
+              <p><span id="in-cart-items-num">0</span> Articles</p>
             </div>
-          </nav>
+        </div>
+        <div id="cart-popup" class="cart-popup">
+            <div id="cart-dropdown">
+              <li class="go-to-cart"><a href="panier.html">Voir le panier</a></li>
+              <li id="empty-cart-msg"><a>Votre panier est vide</a></li>
+            </div>
+        </div>
     </div>
     <div class="content">
 
@@ -71,7 +72,7 @@
 
     <div class="fonction-bis">
       <div class="container">
-          <div class="row">
+          <div id="desc" class="row">
               <div class="col-6">
                   <img class=img-responsive src="asset/img/oreillerconnecter.jpg" alt="" style=width:100%>
               </div>
@@ -82,19 +83,53 @@
                       <p>Avec ses enceintes surround digital et ses billes massantes, notre oreiller connecte vous reveillera en douceur et avec le sourir.Une simple connection en wifi ou en bluetooth vous permettra de configurer de maniere simple et rapide votre SmartSleepySmile. D’une autonomie d’environ 20jours, il se rechergera via usb-c en moins de 2h.
                       Fabrique en duvet d’oie et fibre de chanvre provenant du commerce equitable et assemble a la main par une entreprise Normande, il respecte les normes Iso 105-C09 et Iso 105-E04.
                       Pour conclure, notre SmartSleepySmile correspondra a tous ceux pour qui le sommeil n’a pas de prix et possedant un smartphone.</p>
+
+                      <p>Pour conclure, notre SmartSleepySmile correspondra a
+                      tous ceux pour qui le sommeil n’a pas de prix et possedant un smartphone.</p>
+
+                      <a href="recherche.html">Nos recherches</a></p>
                   </div>
           </div>
        </div>
+
     </div>
 
     <div class="fonction">
         <div class="container">
-            <div class="row">
+            <div class="row" id="prod">
                 <div class="col-4">
-                    <img class=img-responsive src="asset/img/licorne.jpg" alt="" style=width:100%>
+                    <img class=img-responsive src="asset/img/smart.jpg" alt="" style=width:100%>
                 </div>
                 <div class="col-8">
-                    <h3>1er article</h3>
+                    <h3>Sleepy Smile Gold</h3>
+                    <ul>
+                        <li>Enceinte Sound </li>
+                        <li>Réveil avec lumières</li>
+                        <li>Bille massante</li>
+                        <li>Réglage du moelleux de l'oreiller</li>
+                    </ul>
+                    <label for="q">Quantité: </label>
+                    <select id="qt" name="q">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                    </select><br>
+                    <button type="button" class="add-to-cart" data-id="1" data-name="Sleepy Smile Gold" data-price="1500,00">Ajouter au panier</button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-4">
+                    <img class=img-responsive src="asset/img/ipillow.png" alt="" style=width:100%>
+                </div>
+                <div class="col-8">
+                    <h3>Sleepy Smile</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis, lorem sed molestie fermentum, nibh turpis facilisis purus, sed condimentum elit urna eget dolor. Pellentesque placerat dolor et metus blandit maximus. Vivamus feugiat purus at feugiat blandit. Duis lacinia, nisi et facilisis posuere, metus sapien laoreet justo, consequat dignissim lorem sapien eu est. Quisque accumsan hendrerit risus viverra gravida. Curabitur sollicitudin iaculis risus eget rutrum. Nunc aliquam sagittis massa feugiat tincidunt. Nunc vel dolor quis arcu feugiat venenatis. Sed non mattis massa.</p>
                     <label for="q">Quantité: </label>
                     <select id="qt" name="q">
@@ -108,16 +143,17 @@
                       <option value="8">8</option>
                       <option value="9">9</option>
                     </select><br>
-                    <button type="button" class="add-to-cart" data-id="1" data-name="Articles1" data-price="1200,00">Ajouter au panier</button>
+                    <button type="button" class="add-to-cart" data-id="2" data-name="Sleepy Smile" data-price="1000,00">Ajouter au panier</button>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-4">
-                    <img class=img-responsive src="asset/img/licorne.jpg" alt="" style=width:100%>
+                    <img class=img-responsive src="asset/img/basic.jpg" alt="" style=width:100%>
                 </div>
+
                 <div class="col-8">
-                    <h3>2e article</h3>
+                    <h3>Unicorn Sleepy Smile</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis, lorem sed molestie fermentum, nibh turpis facilisis purus, sed condimentum elit urna eget dolor. Pellentesque placerat dolor et metus blandit maximus. Vivamus feugiat purus at feugiat blandit. Duis lacinia, nisi et facilisis posuere, metus sapien laoreet justo, consequat dignissim lorem sapien eu est. Quisque accumsan hendrerit risus viverra gravida. Curabitur sollicitudin iaculis risus eget rutrum. Nunc aliquam sagittis massa feugiat tincidunt. Nunc vel dolor quis arcu feugiat venenatis. Sed non mattis massa.</p>
                     <label for="q">Quantité: </label>
                     <select id="qt" name="q">
@@ -131,44 +167,151 @@
                       <option value="8">8</option>
                       <option value="9">9</option>
                     </select><br>
-                    <button type="button" class="add-to-cart" data-id="2" data-name="Articles2" data-price="1200,00">Ajouter au panier</button>
+                    <button type="button" class="add-to-cart" data-id="3" data-name="Unicorn Sleepy Smile" data-price="1200,00">Ajouter au panier</button>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-4">
-                    <img class=img-responsive src="asset/img/licorne.jpg" alt="" style=width:100%>
-                </div>
 
-                <div class="col-8">
-                    <h3>3e article</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis, lorem sed molestie fermentum, nibh turpis facilisis purus, sed condimentum elit urna eget dolor. Pellentesque placerat dolor et metus blandit maximus. Vivamus feugiat purus at feugiat blandit. Duis lacinia, nisi et facilisis posuere, metus sapien laoreet justo, consequat dignissim lorem sapien eu est. Quisque accumsan hendrerit risus viverra gravida. Curabitur sollicitudin iaculis risus eget rutrum. Nunc aliquam sagittis massa feugiat tincidunt. Nunc vel dolor quis arcu feugiat venenatis. Sed non mattis massa.</p>
-                    <label for="q">Quantité: </label>
-                    <select id="qt" name="q">
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                      <option value="6">6</option>
-                      <option value="7">7</option>
-                      <option value="8">8</option>
-                      <option value="9">9</option>
-                    </select><br>
-                    <button type="button" class="add-to-cart" data-id="3" data-name="Articles3" data-price="1200,00">Ajouter au panier</button>
-                </div>
-            </div>
          </div>
+
     </div>
 
-        <img class=img-responsive src="asset/img/Pillow1.jpg" alt="" style=width:100%>
+    <img class=img-responsive src="asset/img/Pillow1.jpg" alt="" style=width:100%>
 
 
     <!-- Footer -->
-    <footer class="page-footer font-small blue">
+    <footer class="page-footer font-small unique-color-dark" id="cont">
+
+        <div style="background-color: #C1DBE6;">
+            <div class="container">
+
+                <!-- Grid row-->
+                <div class="row py-4 d-flex align-items-center">
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                        <h6 class="mb-0">Restez connecté pour plus d'infos !</h6>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+                        <!-- Facebook -->
+                        <a class="fb-ic">
+                            <i class="fa fa-facebook white-text mr-4"> </i>
+                        </a>
+                        <!-- Twitter -->
+                        <a class="tw-ic">
+                            <i class="fa fa-twitter white-text mr-4"> </i>
+                        </a>
+                        <!-- Google +-->
+                        <a class="gplus-ic">
+                            <i class="fa fa-google-plus white-text mr-4"> </i>
+                        </a>
+                        <!--Linkedin -->
+                        <a class="li-ic">
+                            <i class="fa fa-linkedin white-text mr-4"> </i>
+                        </a>
+                        <!--Instagram-->
+                        <a class="ins-ic">
+                            <i class="fa fa-instagram white-text"> </i>
+                        </a>
+
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row-->
+
+            </div>
+        </div>
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left mt-5">
+
+            <!-- Grid row -->
+            <div class="row mt-3">
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+                    <!-- Content -->
+                    <h6 class="text-uppercase font-weight-bold">Pillow Factory</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>Pillow Factory est une entreprise d'oreiller connecté.</p>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold">Nos Produits</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a href="#!">Sleepy Smile</a>
+                    </p>
+                    <p>
+                        <a href="#!">iSleepySmile</a>
+                    </p>
+                    <p>
+                        <a href="#!"> ??? </a>
+                    </p>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold">A Propos</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a href="#!">A propos de Pillow Factory</a>
+                    </p>
+                    <p>
+                        <a href="#!">On recrute !</a>
+                    </p>
+                    <p>
+                        <a href="#!">Frais de port</a>
+                    </p>
+                    <p>
+                        <a href="#!">Aide</a>
+                    </p>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold">Contact</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <i class="fa fa-home mr-3"></i> Rouen</p>
+                    <p>
+                        <i class="fa fa-envelope mr-3"></i> care@pillowfactory.com</p>
+                    <p>
+                        <i class="fa fa-phone mr-3"></i> + 01 234 567 88</p>
+                    <p>
+                        <i class="fa fa-print mr-3"></i> + 01 234 567 89</p>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
 
         <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2018 The Pillow Factory</a>
+        <div class="footer-copyright text-center py-3">© 2018 Copyright:
+            The Pillow Factory
         </div>
         <!-- Copyright -->
 

@@ -12,50 +12,51 @@
     </head>
     <body>
         <div class="header">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <div class="dropdown">
-                          <div id="cart">
-                            <p><span id="in-cart-items-num">0</span> Articles</p>
-                          </div>
-                          <div id="cart-dropdown">
-                          <ul>
-                            <li id="empty-cart-msg"><a>Votre panier est vide</a></li>
-                            <li class="go-to-cart hidden"><a href="panier.html">Voir le panier</a></li>
-                          </ul>
-                          </div>
-                        </div>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
+            <div class="row background-transparent-lightblue ">
+                <nav class="navbar navbar-expand-lg navbar-light div-navbar col-10">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="SleepySmile.html">Accueil <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="sleepySmile.html?#desc">Description</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="sleepySmile.html?#prod">Nos Produits</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="sleepySmile.html?#cont">Contact</a>
+                        </li>
+                      </ul>
+                    </div>
+                </nav>
+            </div>
         </div>
 
-        <table class="table">
-          <thead>
-            <tr><th>Article</th><th>Prix</th><th>Quantité</th></tr>
-          </thead>
-          <tbody id="cart-tablebody">
-          </tbody>
-        </table>
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <table class="table">
+                  <thead>
+                    <tr><th>Article</th><th>Prix</th><th>Quantité</th></tr>
+                  </thead>
+                  <tbody id="cart-tablebody">
+                  </tbody>
+                </table>
+                <div style="padding-left:15px;">
+                    <p>Sous total : <span class="subtotal"></span>€</p>
 
-        <p>Sous total : <span class="subtotal"></span>€</p>
+                    <button id="confirm-command">Passer la commande</button>
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
 
-        <button id="confirm-command">Passer la commande</button>
     </body>
+
+    <script src="./asset/js/script.js"></script>
 </html>

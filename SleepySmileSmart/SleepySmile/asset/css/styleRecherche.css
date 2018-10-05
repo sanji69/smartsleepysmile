@@ -1,0 +1,14 @@
+.content{
+    background-image: url("../img/galaxy.jpg");
+    height: 300px;
+}
+
+.content h2 {
+    color: white;
+    text-align: center;
+    padding: 100px;
+}
+
+.adventurer {
+    text-align: center;
+}
